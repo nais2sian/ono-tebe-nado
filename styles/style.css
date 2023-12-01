@@ -57,7 +57,7 @@ html {
   text-underline-offset: 4px;
 }
 
-.cover-content {
+.cover {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -68,7 +68,7 @@ html {
   text-transform: uppercase;
 }
 
-.cover-content-image {
+.cover__image {
   position: absolute;
   z-index: -1;
   width: 1440px;
@@ -137,7 +137,7 @@ html {
   margin-top: 13px;
   margin-right: 78px;
   color: #fff;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
@@ -148,7 +148,7 @@ html {
   word-spacing: 12px;
 }
 
-.bet-button {
+.bet__button {
   width: 257px;
   height: 52px;
   border-color: #fff;
@@ -181,7 +181,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.cards-bar {
+.cards__bar {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -190,9 +190,9 @@ h2 {
   list-style: none;
 }
 
-.card-left,
-.card-center,
-.card-right {
+.card_left,
+.card_center,
+.card_right {
   position: relative;
   display: flex;
   flex-grow: 1;
@@ -201,13 +201,13 @@ h2 {
   margin-right: 25px;
 }
 
-.card-right {
+.card_right {
   margin-right: 0;
 }
 
-.image-lot-01,
-.image-lot-02,
-.image-lot-03 {
+.card_left__image,
+.card_center__image,
+.card_right__image {
   position: absolute;
   z-index: -1;
   width: 430px;
@@ -215,9 +215,9 @@ h2 {
   object-fit: cover;
 }
 
-.overlay-card-01,
-.overlay-card-02,
-.overlay-card-03 {
+.card_left__overlay,
+.card_center__overlay,
+.card_right__overlay {
   position: absolute;
   z-index: 0;
   width: 430px;
@@ -226,9 +226,9 @@ h2 {
   background: rgb(0, 0, 0, 0.6);
 }
 
-.card-01-text,
-.card-02-text,
-.card-03-text {
+.card_left__text,
+.card_center__text,
+.card_right__text {
   position: relative;
   z-index: 1;
   display: flex;
@@ -245,9 +245,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.text-01,
-.text-02,
-.text-03 {
+.text {
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
