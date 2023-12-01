@@ -110,7 +110,7 @@ html {
 .aligned-text_center {
   display: flex;
   justify-content: center;
-  margin-right: 60px;
+  padding-right: 60px;
   letter-spacing: 30px;
 }
 
@@ -118,11 +118,17 @@ html {
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
-  letter-spacing: 30px;
+  letter-spacing: 60px;
 }
 
 .letter-spacing-extended {
+  display: flex;
+  justify-content: flex-start;
   letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 30px;
 }
 
 .cover__description {
@@ -141,11 +147,11 @@ html {
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
-  line-height: 28px; /* 127.273% */
-  letter-spacing: 1px;
+  line-height: 28px; 
+  letter-spacing: 0.02em; 
   text-align: center;
   text-transform: uppercase;
-  word-spacing: 12px;
+  word-spacing: 14px;
 }
 
 .bet__button {
