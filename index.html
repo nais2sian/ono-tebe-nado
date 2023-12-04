@@ -14,7 +14,7 @@
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li class="header__menu-item_no-bullit">
-            <a class="header__menu-link">главная</a>
+            <a class="header__menu-link_no-bullit">главная</a>
           </li>
           <li class="header__menu-item_active">
             <a href="#lots" class="header__menu-link">посмотреть лоты</a>
@@ -27,13 +27,10 @@
       <a class="header__logo">
         <img src=images/logo-black.svg class="header__logo-image" alt="Логотип">
       </a>
-      <address class="header__address">
-        <a class="phone__link" href="tel:+99995555555">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <a class="address"
-          >наб. Принсенграхт 263-265,<br />
-          Амстердам</a
-        >
+      <address class="address">
+        <a class="phone" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="mail" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
     </header>
     <main>
@@ -42,80 +39,86 @@
         нарисованная маслом, с изображением цветов">
         <div class="overlay"></div>
         <h1 class="cover__title">
-            <span class="aligned-text">О<span class="letter-spacing-extended">но</span></span>
-            <span class="aligned-text_center">те<span class="letter-spacing-extended">бе</span></span>
-            <span class="aligned-text_right">н<span class="no-letter-spacing">ад</span><span class="no-letter-spacing">о</span></span>
+          <span class="aligned-text"
+            >О<span class="letter-spacing-extended">но</span></span
+          >
+          <span class="aligned-text_center"
+            >те<span class="letter-spacing-extended">бе</span></span
+          >
+          <span class="aligned-text_right"
+            >н<span class="no-letter-spacing">ад</span
+            ><span class="no-letter-spacing">о</span></span
+          >
         </h1>
         <div class="cover__description">
-          <h2 class="cover__description-text">
+          <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
-          </h2>
+          </p>
           <button class="bet__button">Сделать ставку</button>
         </div>
       </section>
 
-      <article class="lots" id="lots">
-        <h2>Лоты</h2>
+      <section class="lots" id="lots">
+        <h2 class="lots__title">Лоты</h2>
         <ul class="cards__bar">
-          <li class="card_left">
-            <img src=images/card-lot-01.jpg class="card_left__image" alt="Кадр
-            из фильма Пола Томаса Андерсона">
-            <div class="card_left__overlay"></div>
-            <div class="card_left__text">
-              <h3>Фильм режиссёра, который <br />бросил киношколу</h3>
-              <p class="text">
-                Не просто бросил, а ушёл с первой <br />
-                лекции. Какой была бы ваша ставка, <br />
-                если бы вы не знали, что режиссёр <br />
-                — Пол Томас Андерсон?
-              </p>
-            </div>
+          <li>
+            <a>
+              <article class="card_left">
+                <img src=images/card-lot-01.jpg class="card_left__image"
+                alt="Кадр из фильма Пола Томаса Андерсона">
+                <div class="card_left__overlay"></div>
+                <h3 class="cards__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
+              </article>
+            </a>
           </li>
-          <li class="card_center">
-            <img src=images/card-lot-02.jpg class="card_center__image"
-            alt="Обложка книги Джеймса Джойса">
-            <div class="card_center__overlay"></div>
-            <div class="card_center__text">
-              <h3>
-                Книга, где описан один <br />
-                скучный день из жизни <br />
-                рекламного агента
-              </h3>
-              <p class="text">
-                Объёмом почти в тысячу страниц. <br />Иногда без знаков
-                препинания и с <br />переходами на древнеанглийский. В ней
-                одновременно <br />рассказывается о 16 июня 1904 года <br />и об
-                истории литературы, начиная с <br />античных времён. И это всё
-                <br />накладывается на эпическую поэму <br />Гомера. Сколько бы
-                вы поставили <br />на «Улисса» Джеймса Джойса?
-              </p>
-            </div>
+          <li>
+            <a>
+              <article class="card_center">
+                <img src=images/card-lot-02.jpg class="card_center__image"
+                alt="Обложка книги Джеймса Джойса">
+                <div class="card_center__overlay"></div>
+                <h3 class="cards__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+              </article>
+            </a>
           </li>
-          <li class="card_right">
-            <img src=images/card-lot-03.jpg class="card_right__image"
-            alt="Картина Кандинского">
-            <div class="card_right__overlay"></div>
-            <div class="card_right__text">
-              <h3>
-                Картина, которую <br />
-                повторит даже 5-летний <br />
-                сын маминой подруги
-              </h3>
-              <p class="text">
-                Ну действительно, там линия, тут <br />кружочек, а здесь и вовсе
-                что-то <br />похожее на инфузорию-туфельку. <br />Никаких полей,
-                лесов, котиков… <br />Сколько бы вы на такое поставили,
-                <br />если бы не знали, что это — одна из <br />
-                революционных работ <br />
-                Кандинского?
-              </p>
-            </div>
+          <li>
+            <a>
+              <article class="card_right">
+                <img src=images/card-lot-03.jpg class="card_right__image"
+                alt="Картина Кандинского">
+                <div class="card_right__overlay"></div>
+                <h3 class="cards__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков… Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+              </article>
+            </a>
           </li>
         </ul>
-        <div class="link-more">
-          <a href="more" class="more">посмотреть больше</a>
-        </div>
-      </article>
+        <a href="more" class="link-more">посмотреть больше</a>
+      </section>
 
       <section class="about" id="about">
         <div class="logo-box">
@@ -123,8 +126,8 @@
           <img src=images/logo-white.svg class="about__logo-image"
           alt="Логотип">
         </div>
-        <article class="about-content">
-          <h4 class="about__title">Об аукционе</h4>
+        <article>
+          <h2 class="about__title">Об аукционе</h2>
           <div class="about__text">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -148,17 +151,14 @@
     </main>
     <footer class="footer">
       <address class="footer__address">
-        <a class="phone__link" href="tel:+99995555555">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <a class="address"
-          >наб. Принсенграхт 263-265,<br />
-          Амстердам</a
-        >
+        <a class="phone" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="mail" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-item">
-            <a class="footer__menu-link">главная</a>
+            <a class="footer__menu-link_noline">главная</a>
           </li>
           <li class="footer__menu-item_active">
             <a href="#lots" class="footer__menu-link">посмотреть лоты</a>
