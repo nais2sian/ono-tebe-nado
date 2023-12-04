@@ -233,7 +233,7 @@ html {
 .card_right__overlay {
   position: absolute;
   z-index: 1;
-  max-width: 430px;
+  width: 430px;
   height: 100%;
   object-fit: cover;
   background: rgb(0, 0, 0, 0.6);
